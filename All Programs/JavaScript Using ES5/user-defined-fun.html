@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function info(){
+            alert("welcome to user defined function")
+        }
+        function add(a,b){
+            var sum = a+b;
+            alert("sum of two number is "+sum);
+        }
+        function empInfo(id,name,salary,desg){
+            if(desg=="Manager"){
+                return salary+5000;
+            }else if(desg=="Programmer" || desg=="Developer"){
+                return salary +3000;
+            }else {
+                return "No bonus only salary "+salary;
+            }
+        }
+        function getNumber() {
+           return 100;
+        }
+       // info();
+    </script>
+</head>
+<body>
+    <script type="text/JavaScript">
+        //info();
+        //add(10,20);
+        //var result1  =  empInfo(1,"Ravi",22000,"Tester");
+        //alert("in main script "+result1)
+        var result2 = getNumber();
+        alert("in main script "+result2)
+    </script>
+</body>
+</html>
