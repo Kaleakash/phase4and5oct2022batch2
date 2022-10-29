@@ -1,0 +1,18 @@
+<div>
+    <h2>Structure directive</h2>
+    <p>Welcome to structure directive</p>
+    <p *ngIf="true">Welcome to structure directive with true</p>
+    <p *ngIf="false">Welcome to structure directive with false</p>
+    <p *ngIf="f1">Welcome to structure directive with true with variable</p>
+    <p *ngIf="f2">Welcome to structure directive with false with variable</p>
+    <input type="button" value="click here" (click)="change()"/>
+    <div *ngIf="f3">
+        <h2>Welcome to Angular Training</h2>
+    </div>
+    <br/>
+    <hr/>
+    <input type="button" [value]="b1" (click)="toggle()"/>
+    <div *ngIf="f4">
+            <h2>Welcome to angular structure directive concept</h2>
+    </div>
+</div>

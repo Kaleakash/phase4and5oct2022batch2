@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child.component';
-import { HeaderComponent } from './header/header.component';
+import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 
 @NgModule({
   declarations: [
-    AppComponent,ChildComponent, HeaderComponent
+    AppComponent,
+    StructureDirectiveComponent
   ],
   imports: [
-    BrowserModule     
+    BrowserModule
   ],
-  //providers: [],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
