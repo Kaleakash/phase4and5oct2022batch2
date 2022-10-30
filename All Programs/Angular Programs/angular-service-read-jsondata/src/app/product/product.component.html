@@ -1,0 +1,8 @@
+<div>
+    <input type="button" value="load data" (click)="loadData()"/>
+    <hr/>
+    <span *ngFor="let product of productsInfo">
+            <img src={{product.url}} width="150px" height="150px"/>
+            <span>{{product.pname}} {{product.price}}</span>
+    </span>
+</div>
