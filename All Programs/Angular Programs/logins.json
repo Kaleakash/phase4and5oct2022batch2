@@ -1,0 +1,7 @@
+{
+	"logins":[
+		{"emailid":"raj@gmail.com","password":"123"},
+		{"emailid":"ravi@gmail.com","password":"567"},
+		{"emailid":"ajay@gmail.com","password":"1212"}
+	]
+}
