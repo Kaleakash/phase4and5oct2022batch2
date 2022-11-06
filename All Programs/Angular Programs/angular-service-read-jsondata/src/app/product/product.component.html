@@ -1,8 +1,8 @@
-<div>
+<div class="container">
     <!-- <input type="button" value="load data" (click)="loadData()"/>
     <hr/> -->
     <h2>Add Product</h2>
-    <form [formGroup]="productRef" (ngSubmit)="storeProduct()">
+    <form [formGroup]="productRef" (ngSubmit)="storeProduct()" class="form-group">
         <label>PId</label>
         <input type="number" formControlName="id"/><br/>
         <label>PName</label>
@@ -11,7 +11,7 @@
         <input type="number" formControlName="price"/><br/>
         <label>URL</label>
         <input type="url" formControlName="url"/><br/>
-        <input type="submit" [value]="b1"/>
+        <input type="submit" [value]="b1" class="btn btn-success"/>
         <input type="reset" value="reset"/>
     </form>
     <br/>

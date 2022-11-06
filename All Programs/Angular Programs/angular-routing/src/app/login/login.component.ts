@@ -24,7 +24,8 @@ export class LoginComponent implements OnInit {
       next:(data:any)=> {
             let result = data.find((l:any)=>l.emailid == login.emailid && l.password==login.password);
             if(result!= undefined){
-                this.router.navigate(["home"]);
+                sessionStorage.setItem("user",result.emailid);
+                this.router.navigate(["home"],{"skipLocationChange":true});
             }else {
               this.msg="InVaid emailid or password";
             }
